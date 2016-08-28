@@ -1,0 +1,226 @@
+/*
+ * Author: Pat Peters
+ * URL: http://patpeters.org
+ *
+ * Project Name: Pharmacy Current
+ * Version: 1.0
+ * Date: 02-02-2016
+ * URL: http://www.pharmacycurrent.com
+ */
+
+
+
+/* ==========================================================================
+   Google Forms
+   ========================================================================== */
+	@font-face {
+		font-family: Bitter;
+		src:url('../fonts/Bitter-Regular.ttf');
+		}
+
+
+
+	#mc_embed_signup, #mc-embedded-subscribe-form {
+		background-color:#ecf0f7;
+		}
+
+	.contact-form {
+		width:100%;	
+		background:url(Content-BG_big.jpg) top center no-repeat;
+		}
+
+	.mc-field-group {
+		text-align:left;
+		margin-left:40px;
+		margin-bottom:20px;
+		background-color:#f7f7f7;
+		border-radius: 5px;
+		width:450px;
+		border: 1px solid #DFDFDF;
+		}
+
+	.mc-field-group > label {
+		font-family: 'Source Sans Pro';
+		color: #2b2b2b;
+		font-size: 18px;
+		font-weight: 300;
+		text-align: left;
+		padding-left: 30px;
+		padding-right:20px;
+		width:180px;
+		display:inline-block;
+		}
+
+
+
+	.text-input, .dropdown-input {
+		border-radius: 5px;
+		background-color:  #ffffff;
+		width: 247px;
+		height: 45px;
+		margin-bottom:8px;
+		margin-top:8px;
+		margin-left:15px;
+		border:1px solid #DFDFDF;
+		box-sizing:border-box;
+		padding-left:10px;
+		}
+
+	.button {
+		margin-left:40px;	
+		width:150px;
+		font-size:20px;
+		font-weight:bold;
+		text-align:center;
+		margin-bottom:20px;	
+		}
+
+
+	.contact-img {
+		margin-top: 120px;	
+		}
+
+	#mce-success-response {
+		font-family:bitter;
+		font-weight:regular;
+		font-size:20px;
+		background-color:#fdd7d7;
+		color:#d92328;
+		margin-bottom:20px;
+		text-align:center;
+		border: 1px solid #999999;
+		border-radius: 5px;
+			
+	}
+	
+
+/*Cell Phones*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+
+
+	.mc-field-group {
+		text-align:left;
+		margin-left:40px;
+		margin-bottom:20px;
+		background-color:#f7f7f7;
+		border-radius: 5px;
+		width:250px;
+		border: 1px solid #DFDFDF;
+		}
+
+
+
+
+	.mc-field-group > label {
+		font-family: 'Source Sans Pro';
+		color: #2b2b2b;
+		font-size: 12px;
+		font-weight: bold;
+		text-align: left;
+		padding-left: 15px;
+		padding-right:10px;
+		width:80px;
+		display:inline-block;
+		}
+
+
+	.text-input, .dropdown-input {
+		border-radius: 5px;
+		background-color:  #ffffff;
+		width: 120px;
+		height: 45px;
+		margin-bottom:8px;
+		margin-top:8px;
+		margin-left:8px;
+		border:1px solid #DFDFDF;
+		box-sizing:border-box;
+		padding-left:10px;
+		}
+
+	.button {
+		margin-left:40px;	
+		width:150px;
+		font-size:20px;
+		font-weight:bold;
+		text-align:center;
+		margin-bottom:20px;	
+		}
+
+
+	.ss-q-title {
+		font-size:20px;	
+		}	
+
+
+	.contact-form {
+		width:100%;	
+		background:url(Content-BG_big.jpg) top center repeat-y;
+		}
+
+}
+
+
+/*Tablet media queries*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 979px) {
+	.mc-field-group {
+		text-align:left;
+		margin-left:140px;
+		margin-bottom:20px;
+		background-color:#f7f7f7;
+		border-radius: 5px;
+		width:400px;
+		border: 1px solid #DFDFDF;
+		}
+
+
+
+
+	.mc-field-group > label {
+		font-family: 'Source Sans Pro';
+		color: #2b2b2b;
+		font-size: 18px;
+		font-weight: bold;
+		text-align: left;
+		padding-left: 15px;
+		padding-right:10px;
+		width:130px;
+		display:inline-block;
+		}
+
+
+	.text-input, .dropdown-input {
+		border-radius: 5px;
+		background-color:  #ffffff;
+		width: 200px;
+		height: 45px;
+		margin-bottom:8px;
+		margin-top:8px;
+		margin-left:8px;
+		border:1px solid #DFDFDF;
+		box-sizing:border-box;
+		padding-left:10px;
+		}
+
+	.button {
+		margin-left:40px;	
+		width:150px;
+		font-size:20px;
+		font-weight:bold;
+		text-align:center;
+		margin-bottom:20px;	
+		}
+
+
+	.ss-q-title {
+		font-size:20px;	
+		}	
+	
+	.contact-form {
+		width:100%;	
+		background:url(Content-BG_big.jpg) top center repeat-y;
+}
+	
+	
+}
+
+

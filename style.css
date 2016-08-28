@@ -1,0 +1,631 @@
+/*
+Theme Name: Pharmacy Theme
+Theme URI: http://pharmacycurrent.com
+Author: Patrick Peters
+Description: Wordpress theme built from bootstrap framework 
+Tags: responsive, bootstrap, pharmacy
+ 
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+ 
+Some other comments or urls here that will prove useful reminders to you or another developer
+*/
+
+@import url('http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic');
+@import url('http://fonts.googleapis.com/css?family=Raleway:400,300,700');
+@import url('css/animate-custom.css');
+@import url('css/bootstrap.css');
+@import url('css/bootstrap-responsive.css');
+@import url('font-awesome.css');
+@import url('css/animate-custom.css');
+
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+@font-face {
+	font-family: Bitter;
+	src:url('../assets/fonts/Bitter-Regular.ttf');
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+	font-family: Source Sans Pro;
+	font-weight: lighter;
+	font-size: 16px;
+	/*color:#2b2b2b;*/
+	background-color:#ecf0f7;
+	
+	
+	-webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;	
+}
+
+/*Headings */
+
+h1 {
+	font-family:bitter;
+	font-weight:bold;
+	font-size:36px;
+	color:#2b2b2b;
+}
+
+h2 {
+	font-family:bitter;
+	font-weight:bold;
+	font-size:30px;
+	color:#2b2b2b;
+}
+h3 {
+	font-family:bitter;
+	font-weight:regular;
+	font-size:24px;
+	color:#2b2b2b;
+}
+
+h4 {
+	font-family:bitter;
+	font-weight:regular;
+	font-size:18px;
+	color:#2b2b2b;
+}
+h5 {
+	font-family:bitter;
+	font-weight:bold;
+	font-size:16px;
+	color:#2b2b2b;
+}
+
+
+button {
+font-family: Source Sans Pro;
+}
+
+
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
+
+ul.navbar-nav li a {
+	
+	left:30%;	
+
+}
+
+
+
+.navbar-nav a {
+	font-family:bitter;
+	font-weight:regular;
+	font-size:18px;
+	color:#2b2b2b;	
+	
+}
+
+.navbar-nav a: hover {
+	font-family:bitter;
+	font-weight:bold;
+	font-size:18px;
+	color:#7a7a7a;	
+}
+
+
+.Header_Title {
+			font-size: 36px;
+			font-family: "Bitter";
+			color: #2b2b2b;
+			font-weight: bold;
+			display:inline-block;
+		}
+		
+		
+.navbar-brand {
+	margin-bottom:40px;
+}
+
+/*Media Queries related to navbar*/
+
+@media (min-width:768px) {
+	.navbar-nav {
+		position:absolute;	
+		left:20%;
+			
+		}
+		
+	ul.navbar-nav li {
+		margin-bottom: 10px;
+		padding-left:10px;	
+	}	
+	ul.navbar-nav li a {
+		border-right: 2px solid #7a7a7a;
+		padding: 0px 15px;
+		
+		
+		}
+}
+
+
+
+
+
+@media (min-width: 1000px) {
+	
+		.Header_Title {
+			font-size: 48px;
+			font-family: "Bitter";
+			color: #2b2b2b;
+			font-weight: bold;
+			display:inline-block;
+		}
+		navbar-header {
+			display:inline-block;
+			max-height:100px;
+		}
+		
+		.container {
+			display:inline-block;	
+		}
+		.navbar-nav {
+			position:absolute;
+			left:50%;
+			bottom:10px;
+			
+		}
+
+	
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Carousel
+   ========================================================================== */
+	.carousel-caption {
+		background-color:#d4dbe4;
+		Opacity:0.9;
+		float:right;
+		color:#2b2b2b;
+		font-size:20px;
+		margin-bottom:0px;
+		
+		
+		
+	}
+	.slide-caption {
+		opacity:1.0;
+		font-family:bitter;
+		font-weight:regular;
+		font-size:24px;
+		color:#2b2b2b;	
+		z-index:auto;
+	}
+	
+	
+
+	
+/*Media Queries related to Carousel*/
+@media (min-width: 1200px) {
+	
+		/*Carousel fix for my images
+		KEEP IMAGES AT 1170px X 600px!!!*/
+		
+		
+		/*.carousel img {
+			margin-left:8.5%;
+		}*/
+		.carousel-inner img {
+			margin:auto;	
+		}
+		
+		
+		div.item > .carousel-caption {
+		background-color:#d4dbe4;
+		Opacity:0.9;
+		position:absolute;
+		width:50%;
+		left:25%;
+		right:25%;
+		bottom:10%;
+		float:right;
+		align-content:left;
+		margin-bottom:0px;
+		
+		
+	}
+
+		
+		
+	
+	}
+
+
+
+
+/* ==========================================================================
+   Main content
+   ========================================================================== */
+	.greywrap {
+		background:url(Content-BG_big.jpg) top center no-repeat;
+		margin-top: 0px;
+		padding-top: 60px;
+		border-bottom: 1px solid #ddd;
+		text-align: center;
+		
+	}
+	.greywrap-news {
+			background:url(Content-BG_big.jpg) top center no-repeat;
+			margin-top: 0px;
+			padding-top: 60px;
+			text-align: center;
+			border:transparent;
+			width:100%;
+		
+	}
+	
+
+
+	@media (min-width: 1000px) 
+	{
+		.main-content {
+			
+			margin-right:7.5%;
+		}
+	} 
+	.caption h4 {
+		font-family:bitter;
+		font-weight:regular;
+		font-size:18px;
+		color:#004CB4;
+			
+	}
+	
+	
+	/*Call to Action*/
+	
+	.action {
+		background-color:#244b82;;
+		text-align:center;	
+	}
+	
+	.action h1 {
+		color:#fdfdfd;	
+	}
+	
+	.action h2 {
+		color:#fdfdfd;	
+	}
+	.action h3 {
+		color:#999999;	
+		
+	}
+	
+	.subscribe {
+		width:160px;
+		font-size:24px;
+		font-weight:bold;
+		text-align:center;
+		margin-bottom:20px;	
+	}
+
+	
+	
+/* ==========================================================================
+   Contact Form
+   ========================================================================== */
+	
+	div.contact {
+		border: 1px solid #2b2b2b;
+		background-color:#ecf0f7;
+		margin-top: 60px;
+
+	}
+	
+	div.contact h2, h3 {
+		text-align:center;	
+	}	
+	
+	
+	
+.contact-form {
+	width:100%;	
+	background:url(Content-BG_big.jpg) top center no-repeat;
+}
+
+
+
+/* ==========================================================================
+  Staying Current
+   ========================================================================== */
+.current_events {
+	border: 1px solid #DFDFDF;
+	background:url(Content-BG_big.jpg) top center no-repeat;
+
+		
+}
+.rss_feed {
+	overflow:scroll;
+	height:430px;	
+}
+.twitter_events {
+	border: 1px solid #DFDFDF;
+	box-sizing:border-box;
+	margin-bottom:50px;
+	background:url(Content-BG_big.jpg) top center no-repeat;
+}
+
+
+/* ==========================================================================
+  Footer
+   ========================================================================== */
+.footerwrap {
+	text-align:center;
+	background:url(Content-BG_big.jpg) top center no-repeat;
+	width:100%;
+		
+}
+
+
+
+/* ==========================================================================
+  Resource Gallery
+   ========================================================================== */
+
+.caption {
+
+
+    position:absolute;
+    top:0;
+    right:0;
+    background:#d4dbe4;
+    opacity:0.8;
+    width:100%;
+    height:100%;
+    padding:2%;
+    display: none;
+    text-align:center;
+    color:#2b2b2b !important;
+	font-size:18px;
+	font-weight:bold;
+    z-index:2;
+
+}
+.caption h4 {
+	font-family:bitter;
+	font-weight:bold;
+	font-size:20px;
+	color:#2b2b2b;
+
+}
+
+.resource_row {
+	display:inline-block;	
+}
+
+.resource-header {
+			
+	}
+	.resource-paragraph {
+		font-size:16px;
+		}
+/* ==========================================================================
+   Contact Us
+   ========================================================================== */
+.icon {
+	padding-right: 10px;	
+}
+.twitter-button {
+		width:300px;
+		font-size:24px;
+		font-weight:bold;
+		text-align:center;
+		margin-bottom:20px;		
+}
+
+
+.registration-image {
+	margin-top: 60px;	
+
+
+}
+
+
+/* ==========================================================================
+   Privacy Policy
+   ========================================================================== */
+
+.privacy-policy {
+	text-align: left;
+	background:url(Content-BG_big.jpg) top center repeat-y;
+	}
+
+
+
+/* ==========================================================================
+   All of the media queries
+   ========================================================================== */
+
+/*Cell phone first*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+
+
+/*Headings */
+
+		h1 {
+			font-family:bitter;
+			font-weight:bold;
+			font-size:30px;
+			color:#2b2b2b;
+		}
+		
+		h2 {
+			font-family:bitter;
+			font-weight:bold;
+			font-size:24px;
+			color:#2b2b2b;
+		}
+		h3 {
+			font-family:bitter;
+			font-weight:regular;
+			font-size:18px;
+			color:#2b2b2b;
+		}
+		
+		h4 {
+			font-family:bitter;
+			font-weight:regular;
+			font-size:16px;
+			color:#2b2b2b;
+		}
+		h5 {
+			font-family:bitter;
+			font-weight:bold;
+			font-size:14px;
+			color:#2b2b2b;
+		}
+		
+		
+		
+		/*Navbar and Header*/
+		
+		.navbar-header h1 {
+			display:flex;
+			font-size:24px;
+			
+				
+				
+		}
+		
+		.navbar-collapse {
+			width:100%;	
+		}
+		
+		.navbar-collapse li {
+			text-align:center;
+			margin-right:20%;
+		}
+
+
+	/*Slider content*/
+	
+	
+		div.item > .carousel-caption {
+			position:absolute;
+			width:100%;
+			left:0%;
+			right:0%;
+			bottom:-10%;	
+			height: 70%;
+			padding:0;
+			margin:0;
+		}
+		
+
+		.slider-button {
+			font-size:8px;
+			margin-top:5px;
+			margin-bottom:5px;
+			}
+		
+		.carousel-caption > h3 {
+			font-size:14px;	
+		}
+		
+		.carousel-caption > p {
+			font-size:10px;	
+		}
+	
+/*Main Content area*/
+		.greywrap {
+			background:url(Content-BG_big.jpg) top center no-repeat;
+			margin-top: 0px;
+			padding-top: 60px;
+			border-bottom: 1px solid #ddd;
+			text-align: center;
+			width:100%;
+		
+	}
+	
+	
+	.action > h2 {
+		margin-top:20px;	
+		}
+
+/*Footer */
+
+		.footerwrap {
+			text-align:center;	
+			
+		}
+		
+		.footerwrap h2 {
+			font-size:20px;	
+		}
+		
+		
+
+/*Registration page*/
+		.contact-img {
+			margin-top:0px;
+			width:30%;
+			left:30%;	
+		}
+	
+	
+	/*Resources section*/
+	.resource-header {
+		display:none;	
+		}
+	.resource-paragraph {
+		font-size:12px;
+		}
+
+
+}
+
+/*Now Tablets*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 979px) {
+	
+	.navbar-header h1 {
+		display:flex;
+		font-size:32px;	
+		
+		
+		}	
+
+	.greywrap {
+		background:url(Content-BG_big.jpg) top center no-repeat;
+		margin-top: 0px;
+		padding-top: 60px;
+		border-bottom: 1px solid #ddd;
+		text-align: center;
+		width:100%;
+		
+		}
+
+	
+		
+		
+		
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
