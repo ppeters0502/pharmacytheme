@@ -45,6 +45,7 @@ function pharmacy_enqueue()
 	wp_enqueue_script('mailchimp-validate', get_template_directory_uri() . '/js/mc-validate.js', array('jquery'));
 	wp_enqueue_script('mailchimp-dynamic', get_template_directory_uri() . '/js/mc-dynamic.js', array('jquery'));
 	wp_enqueue_script('rss-madness', get_template_directory_uri() . '/js/rss-feed-news.js', array('jquery'));
+	wp_enqueue_script('resources', get_template_directory_uri() . '/js/resources.js', array('jquery'));
 }
 add_action('wp_footer', 'pharmacy_enqueue');
 

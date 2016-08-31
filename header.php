@@ -18,7 +18,7 @@
                   	<li><a href="<?php bloginfo('url');?>/register">Register</a></li>
                     <li><a href="<?php bloginfo('url');?>/contactus-2/">Contact Us</a></li>
                     <li><a href="<?php bloginfo('url');?>/news-2/">News</a></li>
-                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="<?php bloginfo('url');?>/resources-2">Resources</a></li>
                   </ul>
               </div><!--navbar-collapse-->
               

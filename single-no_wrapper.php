@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: news-template
+Template Name: single-no_wrapper
 */
 ?>
 <!DOCTYPE html>
@@ -23,10 +23,10 @@ Template Name: news-template
   <?php get_header();?>  
   </head>
 
-  <div class="greywrap-news">
+
   <?php 
    while ( have_posts() ) : the_post();
     the_content();
     endwhile; ?>
-  </div>
+
   <?php get_footer();?>
