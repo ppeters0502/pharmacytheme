@@ -1,3 +1,4 @@
+
 <body>
 <div id="navbar-main">
  <!-- Fixed navbar -->
@@ -10,13 +11,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html"><img alt="logo" src="assets/img/Logo.png"/></a>
+              <a class="navbar-brand" href="<?php bloginfo ('url'); ?>"><img alt="logo" src="<?php bloginfo ('url'); ?>/wp-content/uploads/Logo.png"/></a>
               <h1 class="Header_Title">Pharmacy Current</h1>
               <div class="navbar-collapse collapse">
                   <ul class="nav navbar-nav navbar-right navbar-collapse"> 
-                  	<li><a href="contact.html">Register</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
-                    <li><a href="news.html">News</a></li>
+                  	<li><a href="<?php bloginfo('url');?>/register">Register</a></li>
+                    <li><a href="<?php bloginfo('url');?>/contactus-2/">Contact Us</a></li>
+                    <li><a href="<?php bloginfo('url');?>/news-2/">News</a></li>
                     <li><a href="resources.html">Resources</a></li>
                   </ul>
               </div><!--navbar-collapse-->
@@ -25,4 +26,5 @@
         </div>
     </div><!--end navbar navbar-inverse-->
 </div><!--end navbar-main-->
+ <?php wp_head();?>
 <!--//header-->
